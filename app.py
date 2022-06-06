@@ -14,7 +14,7 @@ def home():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-	df= pd.read_csv("YoutubeSpamMergedData.csv")
+	df= pd.read_csv("https://raw.githubusercontent.com/LOT-1024/crestfallen30/main/YoutubeSpamMergedData.csv")
 	df_data = df[["CONTENT","CLASS"]]
 	# Features and Labels
 	df_x = df_data['CONTENT']
